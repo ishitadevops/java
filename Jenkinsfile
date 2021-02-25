@@ -4,7 +4,6 @@ pipeline {
     agent {
         label 'github-ci'
     }
-    
     stages {
         stage('Checkout SCM') {
             steps {
