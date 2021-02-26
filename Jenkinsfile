@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-               git credentialsId: '375811b9-fcb2-48df-b525-2219316ec8d3', url: 'https://github.com/ishitadevops/java.git'
+               git branch: 'uat', credentialsId: '375811b9-fcb2-48df-b525-2219316ec8d3', url: 'https://github.com/ishitadevops/java.git'
             }
         }
         
